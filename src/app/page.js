@@ -1,6 +1,7 @@
 'use client';
 
 import { Client, Databases } from 'appwrite';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const client = new Client();
@@ -84,6 +85,9 @@ export default function Home() {
             Document added successfully!
           </p>
         )}
+      {/* View Posts */}
+      <button className=" mt-3 w-full bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600 focus:ring focus:ring-green-300 focus:outline-none disabled:opacity-50"><Link href="/posts">View</Link></button>
+      {/* View Posts */}
       </div>
     </div>
   );
